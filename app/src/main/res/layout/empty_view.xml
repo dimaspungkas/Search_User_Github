@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/empty_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/errorImage"
+        android:src="@drawable/ic_github"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/errorTitle"
+        android:text="@string/name"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#111111"
+        android:layout_below="@id/errorImage"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:text="@string/app_name"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/errorTitle"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
